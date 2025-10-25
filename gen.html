@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gensyn Pollen Dash – Jump Runner</title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+
+    <!-- ==== LOGIN SCREEN ==== -->
+    <div id="loginScreen" class="screen active">
+        <div class="login-box">
+            <h1>Gensyn</h1>
+            <input type="text" id="usernameInput" placeholder="Enter your name" autocomplete="off">
+            <button id="loginBtn">Login</button>
+            <p class="hint">Press <kbd>Enter</kbd> or click Login to start</p>
+        </div>
+    </div>
+
+    <!-- ==== GAME SCREEN ==== -->
+    <div id="gameScreen" class="screen">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="ui">
+            <span id="playerName"></span>
+            <span id="scoreDisplay">Score: 0</span>
+        </div>
+    </div>
+
+    <script src="gen.js"></script>
+</body>
+</html>
